@@ -1,0 +1,37 @@
+/*
+* @author jrobertson08
+Eagle Eats - Collect order from user and calculate total, tip, delivery charge
+*/
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to Eagle Eats!");
+		
+		//Get user name	(String Variable = an allocation in memmory for user name)
+		//Scope = a variable is only accessable within the mehtod that it is declared
+		String userName;
+		Scanner in = new Scanner(System.in);
+		System.out.println("What is your name? ");
+		String name = in.nextLine();
+		
+		//print out greeting using escape methods
+		System.out.println("Hello " + name + "," + "\n"+"I'm here to take your order. ");
+		
+		//Get user total and tip
+		double price, tip, total;
+		System.out.println("Please enter your the price of your order: ");
+			price = in.nextDouble();
+		System.out.println("Enter the tip percentage: ");
+			tip = in.nextDouble();
+			total = (price + price * tip);
+			System.out.println("Yout total is: "+ "$" + total);
+			
+			
+		
+
+	}
+
+}
